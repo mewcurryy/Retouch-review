@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		053CB934D36DBEAE9E30545F /* ZoomService+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE8EDCF3A7955056C9DC46 /* ZoomService+Frame.swift */; };
+		0C9D1426A85CF14FBB7A6122 /* ZoomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00429538049956664B21EF /* ZoomState.swift */; };
+		15147C2B54B0E5C2C71ED068 /* OneEuroFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDBAC748744AE13B4BCE34 /* OneEuroFilter.swift */; };
+		18F7ED88991F04525758D3ED /* EyeZoomFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D51CBF3DD900E62BA682F5 /* EyeZoomFlow.swift */; };
+		2E84D1F3F09F527D6A536B24 /* ZoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359C9C2152FABE07289D4C6 /* ZoomService.swift */; };
+		430608BCE55B3DA6844A8CDB /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A5E3550A1A62A00C682BC /* AppContainer.swift */; };
+		497FEA5DCA270F62C594C278 /* FaceObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CC7216FA70B865E36BE5A /* FaceObservation.swift */; };
+		5E64489D14AFDEA42987DB24 /* EyeActivityRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A27637AA5B2BC19C558A30 /* EyeActivityRecognizer.swift */; };
+		77BD15E72184EB7EDC8F951A /* FusedStabilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF991ADB5991CF97FA11266 /* FusedStabilizer.swift */; };
+		834E030730A4C7EB00326E9C /* MirrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E030630A4C7EB00326E9C /* MirrorView.swift */; };
+		9E31ED2788F99EC2EF63724E /* FaceLandmarkDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EC46088FB738B512B546 /* FaceLandmarkDetector.swift */; };
+		A77AC2BA36B3FBF09B8E3E2F /* ZoomReadiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9DA2F462CA48EA6357581 /* ZoomReadiness.swift */; };
+		A7F1B179F2D5A6EC86273543 /* ZoomGestureResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95589C1F291BEE8170AA08 /* ZoomGestureResolver.swift */; };
+		B83969999E9770A3374F1236 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031395577AF49532C0F3149 /* ZoomAnimator.swift */; };
+		C2B56FA2544D9C780E5B5214 /* EyeZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBA15C7166CF4CB79CE257C /* EyeZones.swift */; };
+		F1F308ED45DBF902C6D06D4B /* RetouchWidgetExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7956B6BD82D39C71C82E9D04 /* RetouchWidgetExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F650A4C2C0F2BE83CEA96E99 /* ZoomTuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D464BEE43DEA43A1D7D098 /* ZoomTuning.swift */; };
+		F7BF5E8FB737565235FBF68C /* MirrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499A01C1ECFE5F741CD8BB3 /* MirrorViewModel.swift */; };
+		FB5A0E435E4BF0EA3C39758E /* DistanceCompensator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2AACD43094B7D295196372 /* DistanceCompensator.swift */; };
+		FF1151B36E4FDFA797958AA3 /* DetectionPacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700980173759B97E48AEF8DB /* DetectionPacer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ABFFFA34B4E9C5EBA96FCA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DBD69A5F0C20F81EE295949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65993A029F777865376CDD6;
+			remoteInfo = Retouch;
+		};
+		8DE94D1B7B1D02F78D8050EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DBD69A5F0C20F81EE295949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65993A029F777865376CDD6;
+			remoteInfo = Retouch;
+		};
+		C3B95409BC34574DEAD03EA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DBD69A5F0C20F81EE295949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1540AD11DE9B509E8AC099F1;
+			remoteInfo = RetouchWidgetExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE9104F06EC1412EF1B1168B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1F308ED45DBF902C6D06D4B /* RetouchWidgetExt.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		087E680C3D422B36064C7554 /* RetouchUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RetouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DE8EDCF3A7955056C9DC46 /* ZoomService+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomService+Frame.swift"; sourceTree = "<group>"; };
+		1DBDBAC748744AE13B4BCE34 /* OneEuroFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneEuroFilter.swift; sourceTree = "<group>"; };
+		2499A01C1ECFE5F741CD8BB3 /* MirrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewModel.swift; sourceTree = "<group>"; };
+		4E95589C1F291BEE8170AA08 /* ZoomGestureResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomGestureResolver.swift; sourceTree = "<group>"; };
+		65A27637AA5B2BC19C558A30 /* EyeActivityRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeActivityRecognizer.swift; sourceTree = "<group>"; };
+		69EC082892D1822FA6E7E140 /* Retouch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Retouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		700980173759B97E48AEF8DB /* DetectionPacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionPacer.swift; sourceTree = "<group>"; };
+		73D8EC46088FB738B512B546 /* FaceLandmarkDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLandmarkDetector.swift; sourceTree = "<group>"; };
+		7956B6BD82D39C71C82E9D04 /* RetouchWidgetExt.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = RetouchWidgetExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E030630A4C7EB00326E9C /* MirrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorView.swift; sourceTree = "<group>"; };
+		8D2AACD43094B7D295196372 /* DistanceCompensator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCompensator.swift; sourceTree = "<group>"; };
+		9359C9C2152FABE07289D4C6 /* ZoomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomService.swift; sourceTree = "<group>"; };
+		A031395577AF49532C0F3149 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
+		A73050697629A461A47600AC /* RetouchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RetouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D464BEE43DEA43A1D7D098 /* ZoomTuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTuning.swift; sourceTree = "<group>"; };
+		CC7CC7216FA70B865E36BE5A /* FaceObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceObservation.swift; sourceTree = "<group>"; };
+		D8D51CBF3DD900E62BA682F5 /* EyeZoomFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeZoomFlow.swift; sourceTree = "<group>"; };
+		DBBA15C7166CF4CB79CE257C /* EyeZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeZones.swift; sourceTree = "<group>"; };
+		EAF991ADB5991CF97FA11266 /* FusedStabilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusedStabilizer.swift; sourceTree = "<group>"; };
+		F12A5E3550A1A62A00C682BC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		FAB9DA2F462CA48EA6357581 /* ZoomReadiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomReadiness.swift; sourceTree = "<group>"; };
+		FB00429538049956664B21EF /* ZoomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0C05EF4EECD15AA7ED29CDD2 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				700980173759B97E48AEF8DB /* DetectionPacer.swift */,
+				73D8EC46088FB738B512B546 /* FaceLandmarkDetector.swift */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		1A38179E1887763CD5CB0C9C /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				834E030530A4C7E800326E9C /* Views */,
+				673C1409E027A3D37083F45C /* ViewModels */,
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+		2010BD8EF532A6756785ADFB /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				8D2AACD43094B7D295196372 /* DistanceCompensator.swift */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		3105626F61B759F371B0A5DC = {
+			isa = PBXGroup;
+			children = (
+				8EC05BDDADE74F105F0EF580 /* Retouch */,
+				EBD35036C3E8356FC0A1D0E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A1D2EF8AEB8F3222F8CDABD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC7CC7216FA70B865E36BE5A /* FaceObservation.swift */,
+				FB00429538049956664B21EF /* ZoomState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63FE561A2BF687E578D45E32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A031395577AF49532C0F3149 /* ZoomAnimator.swift */,
+				4E95589C1F291BEE8170AA08 /* ZoomGestureResolver.swift */,
+				FAB9DA2F462CA48EA6357581 /* ZoomReadiness.swift */,
+				9359C9C2152FABE07289D4C6 /* ZoomService.swift */,
+				09DE8EDCF3A7955056C9DC46 /* ZoomService+Frame.swift */,
+				B2D464BEE43DEA43A1D7D098 /* ZoomTuning.swift */,
+				0C05EF4EECD15AA7ED29CDD2 /* Detection */,
+				E8AD278C31C342E35243C6D1 /* Flows */,
+				2010BD8EF532A6756785ADFB /* Geometry */,
+				7AFE623C0FDCE482237DCE14 /* Recognition */,
+				902165EF679934A8CE07673D /* Tracking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		673C1409E027A3D37083F45C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2499A01C1ECFE5F741CD8BB3 /* MirrorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7AFE623C0FDCE482237DCE14 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				65A27637AA5B2BC19C558A30 /* EyeActivityRecognizer.swift */,
+			);
+			path = Recognition;
+			sourceTree = "<group>";
+		};
+		834E030530A4C7E800326E9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				834E030630A4C7EB00326E9C /* MirrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EC05BDDADE74F105F0EF580 /* Retouch */ = {
+			isa = PBXGroup;
+			children = (
+				CCE36430B0E58451F6A7396E /* App */,
+				FDA2B95A39F33E0A605AB0AB /* Features */,
+				5A1D2EF8AEB8F3222F8CDABD /* Models */,
+				63FE561A2BF687E578D45E32 /* Services */,
+			);
+			path = Retouch;
+			sourceTree = "<group>";
+		};
+		902165EF679934A8CE07673D /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				EAF991ADB5991CF97FA11266 /* FusedStabilizer.swift */,
+				1DBDBAC748744AE13B4BCE34 /* OneEuroFilter.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		CCE36430B0E58451F6A7396E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F12A5E3550A1A62A00C682BC /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E8AD278C31C342E35243C6D1 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				DBBA15C7166CF4CB79CE257C /* EyeZones.swift */,
+				D8D51CBF3DD900E62BA682F5 /* EyeZoomFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		EBD35036C3E8356FC0A1D0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69EC082892D1822FA6E7E140 /* Retouch.app */,
+				A73050697629A461A47600AC /* RetouchTests.xctest */,
+				087E680C3D422B36064C7554 /* RetouchUITests.xctest */,
+				7956B6BD82D39C71C82E9D04 /* RetouchWidgetExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA2B95A39F33E0A605AB0AB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1A38179E1887763CD5CB0C9C /* Mirror */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1540AD11DE9B509E8AC099F1 /* RetouchWidgetExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A984A860FEE4399390D493 /* Build configuration list for PBXNativeTarget "RetouchWidgetExt" */;
+			buildPhases = (
+				198FCFA484F9C99846B3E693 /* Sources */,
+				854E69302D0FFA1363E2CF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetouchWidgetExt;
+			packageProductDependencies = (
+			);
+			productName = RetouchWidgetExt;
+			productReference = 7956B6BD82D39C71C82E9D04 /* RetouchWidgetExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		71DD0ECCBBC3492D9B4762E3 /* RetouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179F3CB1F798299D23CDDCE0 /* Build configuration list for PBXNativeTarget "RetouchUITests" */;
+			buildPhases = (
+				452674241317C068B72514C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91691BE3FD71DBF37C8E55AA /* PBXTargetDependency */,
+			);
+			name = RetouchUITests;
+			packageProductDependencies = (
+			);
+			productName = RetouchUITests;
+			productReference = 087E680C3D422B36064C7554 /* RetouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B07A2FAEA483B4A9643FC4C0 /* RetouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F05DEAC1A36E61305136409 /* Build configuration list for PBXNativeTarget "RetouchTests" */;
+			buildPhases = (
+				E84E65434EB5C8E951E8D99D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44658E114DF096E442491BB1 /* PBXTargetDependency */,
+			);
+			name = RetouchTests;
+			packageProductDependencies = (
+			);
+			productName = RetouchTests;
+			productReference = A73050697629A461A47600AC /* RetouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D65993A029F777865376CDD6 /* Retouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385465222D1E9A7CB53BB2EF /* Build configuration list for PBXNativeTarget "Retouch" */;
+			buildPhases = (
+				1D01BC6B1B4C3E31F74F6BE5 /* Sources */,
+				EE9104F06EC1412EF1B1168B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B05B62C0F939CC1CA9762B7F /* PBXTargetDependency */,
+			);
+			name = Retouch;
+			packageProductDependencies = (
+			);
+			productName = Retouch;
+			productReference = 69EC082892D1822FA6E7E140 /* Retouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DBD69A5F0C20F81EE295949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1540AD11DE9B509E8AC099F1 = {
+						DevelopmentTeam = Y2U32BVMN3;
+						ProvisioningStyle = Automatic;
+					};
+					71DD0ECCBBC3492D9B4762E3 = {
+						DevelopmentTeam = Y2U32BVMN3;
+						TestTargetID = D65993A029F777865376CDD6;
+					};
+					B07A2FAEA483B4A9643FC4C0 = {
+						DevelopmentTeam = Y2U32BVMN3;
+					};
+					D65993A029F777865376CDD6 = {
+						DevelopmentTeam = Y2U32BVMN3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA516C0AF08DCA6B7B4BDD84 /* Build configuration list for PBXProject "Retouch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3105626F61B759F371B0A5DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EBD35036C3E8356FC0A1D0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65993A029F777865376CDD6 /* Retouch */,
+				B07A2FAEA483B4A9643FC4C0 /* RetouchTests */,
+				71DD0ECCBBC3492D9B4762E3 /* RetouchUITests */,
+				1540AD11DE9B509E8AC099F1 /* RetouchWidgetExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		854E69302D0FFA1363E2CF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		198FCFA484F9C99846B3E693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D01BC6B1B4C3E31F74F6BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430608BCE55B3DA6844A8CDB /* AppContainer.swift in Sources */,
+				FF1151B36E4FDFA797958AA3 /* DetectionPacer.swift in Sources */,
+				FB5A0E435E4BF0EA3C39758E /* DistanceCompensator.swift in Sources */,
+				5E64489D14AFDEA42987DB24 /* EyeActivityRecognizer.swift in Sources */,
+				C2B56FA2544D9C780E5B5214 /* EyeZones.swift in Sources */,
+				834E030730A4C7EB00326E9C /* MirrorView.swift in Sources */,
+				18F7ED88991F04525758D3ED /* EyeZoomFlow.swift in Sources */,
+				9E31ED2788F99EC2EF63724E /* FaceLandmarkDetector.swift in Sources */,
+				497FEA5DCA270F62C594C278 /* FaceObservation.swift in Sources */,
+				77BD15E72184EB7EDC8F951A /* FusedStabilizer.swift in Sources */,
+				F7BF5E8FB737565235FBF68C /* MirrorViewModel.swift in Sources */,
+				15147C2B54B0E5C2C71ED068 /* OneEuroFilter.swift in Sources */,
+				B83969999E9770A3374F1236 /* ZoomAnimator.swift in Sources */,
+				A7F1B179F2D5A6EC86273543 /* ZoomGestureResolver.swift in Sources */,
+				A77AC2BA36B3FBF09B8E3E2F /* ZoomReadiness.swift in Sources */,
+				053CB934D36DBEAE9E30545F /* ZoomService+Frame.swift in Sources */,
+				2E84D1F3F09F527D6A536B24 /* ZoomService.swift in Sources */,
+				0C9D1426A85CF14FBB7A6122 /* ZoomState.swift in Sources */,
+				F650A4C2C0F2BE83CEA96E99 /* ZoomTuning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452674241317C068B72514C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E84E65434EB5C8E951E8D99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44658E114DF096E442491BB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65993A029F777865376CDD6 /* Retouch */;
+			targetProxy = 8DE94D1B7B1D02F78D8050EA /* PBXContainerItemProxy */;
+		};
+		91691BE3FD71DBF37C8E55AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65993A029F777865376CDD6 /* Retouch */;
+			targetProxy = 8ABFFFA34B4E9C5EBA96FCA0 /* PBXContainerItemProxy */;
+		};
+		B05B62C0F939CC1CA9762B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1540AD11DE9B509E8AC099F1 /* RetouchWidgetExt */;
+			targetProxy = C3B95409BC34574DEAD03EA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AA2192F4722C06F4F09B2F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y2U32BVMN3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B9774F75CED870CF6DAC111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y2U32BVMN3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		53F1D9C92A8346D02569E66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.RetouchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retouch.app/Retouch";
+			};
+			name = Debug;
+		};
+		5A1E4A877DA9FBAB315B38EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.RetouchUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Retouch;
+			};
+			name = Debug;
+		};
+		7A3DBC6CDC9150E3DE489534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Retouch;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to show your face as a mirror and to detect hand gestures for zoom.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.Retouch;
+				PRODUCT_NAME = Retouch;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		96D3629A6AADA5B7FDFA5324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetouchWidgetExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Retouch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.Retouch.RetouchWidgetExt;
+				PRODUCT_NAME = RetouchWidgetExt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D54C5B4E96CB85C35ADEB67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Retouch;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to show your face as a mirror and to detect hand gestures for zoom.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.Retouch;
+				PRODUCT_NAME = Retouch;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E8DF573B0B8879DF5DE752A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.RetouchUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Retouch;
+			};
+			name = Release;
+		};
+		EDDD24EA61E32754EDAB2804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.RetouchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retouch.app/Retouch";
+			};
+			name = Release;
+		};
+		FE7CCBBC1C26FC6CB41F63CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetouchWidgetExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Retouch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bsd.iosda.Retouch.RetouchWidgetExt;
+				PRODUCT_NAME = RetouchWidgetExt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179F3CB1F798299D23CDDCE0 /* Build configuration list for PBXNativeTarget "RetouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1E4A877DA9FBAB315B38EF /* Debug */,
+				E8DF573B0B8879DF5DE752A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		21A984A860FEE4399390D493 /* Build configuration list for PBXNativeTarget "RetouchWidgetExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D3629A6AADA5B7FDFA5324 /* Debug */,
+				FE7CCBBC1C26FC6CB41F63CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		385465222D1E9A7CB53BB2EF /* Build configuration list for PBXNativeTarget "Retouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3DBC6CDC9150E3DE489534 /* Debug */,
+				D54C5B4E96CB85C35ADEB67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F05DEAC1A36E61305136409 /* Build configuration list for PBXNativeTarget "RetouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F1D9C92A8346D02569E66D /* Debug */,
+				EDDD24EA61E32754EDAB2804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA516C0AF08DCA6B7B4BDD84 /* Build configuration list for PBXProject "Retouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA2192F4722C06F4F09B2F5 /* Debug */,
+				3B9774F75CED870CF6DAC111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DBD69A5F0C20F81EE295949 /* Project object */;
+}
