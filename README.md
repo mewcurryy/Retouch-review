@@ -2,8 +2,8 @@
 
 Retouch is a portable digital mirror for iPhone. It uses the front camera for makeup and grooming, adjusts to your room light, and zooms in on the part of your face you're working on, with less tapping.
 
-- App Store (v1.0 live, v2.0 in review): https://apps.apple.com/id/app/retouch-the-better-mirror/id6827142921
-- TestFlight (v2.0): https://testflight.apple.com/join/a6sEP244
+- App Store [v1.0 live, v2.0 in review](https://apps.apple.com/id/app/retouch-the-better-mirror/id6827142921)
+- TestFlight [v2.0](https://testflight.apple.com/join/a6sEP244)
 
 ## What this excerpt is
 
@@ -37,7 +37,3 @@ View → ViewModel → Service (protocol) → Model. Services are created only i
 ## Stack
 
 SwiftUI (iOS 18+), AVFoundation, Vision, Core Image / Metal, WidgetKit / Live Activities / App Intents, XcodeGen, Jenkins and Xcode Cloud. No third-party dependencies.
-
-## Commit history
-
-This is a fresh repo. The project history lives in the previous repository: [OLD REPO LINK]
